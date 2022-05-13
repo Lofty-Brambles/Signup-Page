@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A Sign-up Page!</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="shortcut icon" href="./assets/favicon.jpg" type="image/x-icon">
+	<script src="./script.js" defer></script>
+</head>
+	<body>
+		<div class="left">
+			<div class="banner-fill">
+				<div class="banner">
+					<div class="logo"><img class="logo" src="./assets/odin-logo.png" alt="Odin Logo"></div>
+					<div class="logo-text">Tasty Food!</div>
+				</div>
+			</div>
+			<div class="footer link">
+				Photo by <a href="https://www.pexels.com/@luck47/">Luck47</a>
+				on<a href="https://www.pexels.com/">Pexels.</a>
+			</div>
+		</div>
+		<div class="right">
+			<header>
+				<div class="content">
+					<div class="header-text">
+						<div class="seperate">
+							This is a demo registration page! You know <br>
+							you need something like this to help you<br>
+							realize your deepest dreams.<br>
+						</div>
+						Sign-up <i>now</i> to get started.
+					</div>
+				</div>
+				<canvas id="noise"></canvas>
+				<div class="vignette"></div>
+			</header>
+			<form action="">
+				<div class="formbox">
+					<div class="formhead">
+						<div class="head-text">
+							Let's do this!
+						</div>
+						<div class="text">
+							Fields marked with an asterisk (<span class="red">*</span>) are required
+						</div>
+					</div>
+					<div class="formbody">
+						<div class="wrap">
+							<input type="text" id="first-name" class="input" placeholder=" ">
+							<label for="first-name">First Name<span class="red">*</span></label>
+						</div>
+						<div class="wrap">
+							<input type="text" id="second-name" class="input" placeholder=" ">
+							<label for="second-name">Second name<span class="red">*</span></label>
+						</div>
+						<div class="wrap">
+							<input type="email" id="email" class="input" placeholder=" ">
+							<label for="email">Email<span class="red">*</span></label>
+							<p class="error emailError"></p>
+						</div>
+						<div class="wrap">
+							<input type="tel" id="phone" class="input" placeholder=" ">
+							<label for="phone">Phone Number<span class="red">*</span></label>
+						</div>
+						<div class="wrap">
+							<input type="password" id="password" class="input" placeholder=" ">
+							<label for="password">Password<span class="red">*</span></label>
+							<p class="error passError">
+								<span class="char">❌</span> Minimum of 7 characters.<br>
+								<span class="capital">❌</span> Atleast One Capital Letter.<br>
+								<span class="num">❌</span> Atleast One Number.<br>
+							</p>
+						</div>
+						<div class="wrap">
+							<input type="password" id="conf-pass" class="input" placeholder=" ">
+							<label for="conf-pass">Confirm Password<span class="red">*</span></label>
+							<p class="error confPassError"></p>
+						</div>
+					</div>
+				</div>
+				<div class="formfoot">
+					<div class="signup"><button class="btn">Create Account</button></div>
+					<div class="login link text">Already have an account? 
+						<a href="#"><span class="red">Log in.</span></a>
+					</div>
+				</div>
+			</form>
+			<footer>
+				<div class="link"><a href="http://">Lofty | Brambles</a></div>
+				<div class="g-logo"><img class="g-logo" src="./assets/github-logo.png" alt="Github Logo"></div>
+			</footer>
+		</div>
+	</body>
+</html>
