@@ -122,9 +122,8 @@ form {
 }
 
 .formbody {
-	display: grid;
-	grid-template-columns: repeat( 2, 1fr );
-	grid-template-rows: repeat( 3, 1fr );
+	display: flex;
+	flex-flow: row wrap;
 }
 
 .emailError, .passError, .confPassError {
@@ -184,6 +183,7 @@ form {
 .wrap {
 	position: relative;
 	margin-bottom: 30px;
+	width: 40%;
 
 	display: flex;
 	justify-content: flex-start;
@@ -291,6 +291,10 @@ label {
 		width: calc( 100vw - 1rem );
 	}
 
+	.left {
+		height: 50vh;
+	}
+
 	.banner {
 		padding: 10px 0px;
 	}
@@ -301,6 +305,10 @@ label {
 
 	.header-text {
 		padding-left: 50px;
+	}
+
+	.formbody {
+		height: 100%;
 	}
 
 }
